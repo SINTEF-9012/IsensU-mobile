@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />    
+</head>
+<body onload="init()">
+    <canvas id="canvas" width="device-width">
+    </canvas>
+    <script type="text/javascript">
+ 		
+	// Prevents dragging and scrolling of the web view
+	document.addEventListener("touchmove", function(e)
+	{
+   		e.preventDefault();
+	});
+	
+	// Get the HTML5 canvas element
+    canvas = document.getElementById('canvas');
+    ctx = canvas.getContext('2d');
+    ctx.canvas.width  = window.innerWidth;
+	ctx.canvas.height = window.innerHeight;
+	startx = window.innerWidth/2;
+	starty = window.innerHeight/2;
+	
+	alert("Test - Appcelerator");
+  
+	Ti.App.addEventListener('data', function(passedData) 
+	{    
+		var n = passedData.data.split(" ");
+    	draw(n[0], n[1]);
+	});
+
+	function draw(accelerationx, accelerationy) 
+	{
+ 		var x = startx + parseFloat(accelerationx)*2;
+        var y = starty - parseFloat(accelerationy)*2;
+        ctx.moveTo(startx, starty);
+        ctx.lineTo(x, y);
+        ctx.stroke();
+        startx = x;
+       	starty = y;       
+
+		if(startx < 0 || startx > window.innerWidth || starty < 0 || starty > window.innerHeight)
+		{	
+     		stopWatch();
+     	}   
+	}
+	
+    function stopWatch()
+    {
+    	// setTimeout = 0 prevents the screen on iOS devices from freezing when the alert is displayed
+    	setTimeout(function() {
+    		alert("The line is out of the screen!");
+    	}, 0);
+    	
+    	// Resizing the canvas clears the screen
+		ctx.canvas.width  = 100;
+		ctx.canvas.width  = window.innerWidth;
+		ctx.canvas.height = window.innerHeight;
+		startx = window.innerWidth/2;
+		starty = window.innerHeight/2;
+    }   
+    
+    </script>
+</body>
+</html>

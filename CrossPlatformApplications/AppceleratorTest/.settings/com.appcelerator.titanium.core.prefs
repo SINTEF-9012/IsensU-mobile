@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+provisioning_profiles/development/3F7FBF16-4157-45B3-A89B-45B56E255F47/appid=*
+provisioning_profiles/development/3F7FBF16-4157-45B3-A89B-45B56E255F47/name=Kristina Provisioning Profile
+provisioning_profiles/development/3F7FBF16-4157-45B3-A89B-45B56E255F47/uuid=3F7FBF16-4157-45B3-A89B-45B56E255F47
+provisioning_profiles/development/7FCFA79E-EABE-48C6-AE2A-EE69F237AFED/appid=*
+provisioning_profiles/development/7FCFA79E-EABE-48C6-AE2A-EE69F237AFED/name=iOS Team Provisioning Profile\: test app
+provisioning_profiles/development/7FCFA79E-EABE-48C6-AE2A-EE69F237AFED/uuid=7FCFA79E-EABE-48C6-AE2A-EE69F237AFED
+provisioning_profiles/development/C000EF2B-DB7B-4036-829C-3AE1E86B3D16/appid=*
+provisioning_profiles/development/C000EF2B-DB7B-4036-829C-3AE1E86B3D16/name=iOS Team Provisioning Profile\: *
+provisioning_profiles/development/C000EF2B-DB7B-4036-829C-3AE1E86B3D16/uuid=C000EF2B-DB7B-4036-829C-3AE1E86B3D16
+provisioning_profiles/development/DF149735-4F4B-48FE-8AD2-AD867E829C6C/appid=*
+provisioning_profiles/development/DF149735-4F4B-48FE-8AD2-AD867E829C6C/name=iOS Team Provisioning Profile\: test app
+provisioning_profiles/development/DF149735-4F4B-48FE-8AD2-AD867E829C6C/uuid=DF149735-4F4B-48FE-8AD2-AD867E829C6C
